@@ -5,10 +5,10 @@ if len(A1) != N or N == 0:
     print("Некорректное количество элементов")
 else:
     X = int(input("Введите число X, для сравнения со списком: "))
-    max = abs(X + A1[0])
+    max = abs(X - A1[0])
     index = 0
     for i in range(1, N):
-        count = abs(X + A1[i])
+        count = abs(X - A1[i])
         if count < max:
             max = count
             index = i
